@@ -14,7 +14,7 @@
     <div id="app">
         <main class="container">
           <div class="row">
-            <div class="col-3">
+            <div class="col-3 p-0 myContacts">
                 <nav class="d-flex justify-content-between">
                     <div class="d-flex">
                         <div class="image">
@@ -27,17 +27,22 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </nav>
+                <div class="alert"></div>
+                    <div class="search d-flex">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search">
+                    </div>
             <div class="mainText"></div>
             </div>
-            <div class="col-9 d-flex flex-column justify-content-between">
+            <div class="col-9  p-0 mytextArea">
                     <nav class="d-flex justify-content-between">
                         <div class="d-flex">
                             <div class="image">
                                 <img src="img/avatar_1.jpg" alt="img">
                             </div>
-                            <div>
-                                <p>Michele</p>
-                                <p>ultimo accesso oggi alle 12:00</p>
+                            <div >
+                                <p class="mb-0">Michele</p>
+                                <p class="mb-0">ultimo accesso oggi alle 12:00</p>
                             </div>
                         </div>
                         <div>
@@ -46,9 +51,17 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </nav>
-                <div class="mainText"></div>
-                <div class="textFooter">
-                    <input type="text">
+                <div class="mainText">
+                    <!--messaggi-->
+                </div>
+                <div class="container textFooter ">
+                    <div class="row d-flex d-flex  align-items-center textFooter">
+                        <div class="col-1">
+                            <i class="fa-regular fa-face-smile"></i>
+                        </div>
+                        <div class="col-10"><input type="text"></div>
+                        <div class="col-1"><i class="fa-solid fa-microphone"></i></div>
+                    </div>
                 </div>
             </div>
           </div>

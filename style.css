@@ -4,12 +4,22 @@
 }
 
 main{
-    height: 100vh;
+   /* height: 100vh;*/
+    border: 1px solid black;
+}
+nav{
+    background-color: rgb(230, 230, 230);
+    border: 1px solid black;
+}
+
+.myContacts{
+    border: 1px solid black;
 }
 .image{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 
@@ -18,7 +28,14 @@ img{
 }
 .mainText{
     height: 70vh;
+    background-color: bisque;
 }
-div{
+
+.textFooter{
+   height: 10vh;
+}
+input{
+    width: 100%;
+}/*div{
     border: 1px solid black;
-}
+}*/
