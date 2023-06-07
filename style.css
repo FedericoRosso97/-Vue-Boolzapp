@@ -1,0 +1,24 @@
+
+.flex{
+    display: flex;
+}
+
+main{
+    height: 100vh;
+}
+.image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+img{
+    max-width: 100%;
+}
+.mainText{
+    height: 70vh;
+}
+div{
+    border: 1px solid black;
+}
