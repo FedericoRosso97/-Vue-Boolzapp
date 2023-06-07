@@ -64,8 +64,9 @@
                     </nav>
                 <div class="mainText">
                     <!--messaggi-->
-                    <div class="" v-for="(item,index) in contacts[0].messages">
-                        <p :class="{sentMessage:contacts[0].messages[index].status=='sent'}">{{contacts[0].messages[index].message}}</p>
+                    <div class="#" v-for="(item,index) in contacts[0].messages">
+                        <p v-if="contacts[0].messages[index].status==='sent'" class="sentMessage" >{{contacts[0].messages[index].message}}</p>
+                        <p v-else class="receivedMessage">{{contacts[0].messages[index].message}}</p>
                     </div>
                 </div>
                 <div class="container textFooter ">

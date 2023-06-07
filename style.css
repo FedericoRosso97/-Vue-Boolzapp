@@ -4,11 +4,19 @@
 }
 
 .sentMessage{
-    background-color:green;
+    background-color:rgb(11, 179, 11);
+    padding: 0.5rem;
+    width: 10vw;
+    border-radius: 10px;
+    margin-left: 85%;
+
 }
 
 .receivedMessage{
     background-color: white;
+    padding: 0.5rem;
+    width: 10vw;
+    border-radius: 10px;
 }
 
 main{
@@ -40,7 +48,7 @@ img{
     height: 70vh;
     background-color: bisque;
     background-image: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png);
-
+    padding: 1.5rem;
 }
 
 .textFooter{
