@@ -6,26 +6,23 @@
 .sentMessage{
     background-color:rgb(11, 179, 11);
     padding: 0.5rem;
-    width: 10vw;
+    width: 15vw;
     border-radius: 10px;
-    margin-left: 85%;
+    margin-left: 75%;
 
 }
 
 .receivedMessage{
     background-color: white;
     padding: 0.5rem;
-    width: 10vw;
+    width: 15vw;
     border-radius: 10px;
 }
 
-main{
-    border: 1px solid black;
-}
+
 
 nav{
     background-color: rgb(230, 230, 230);
-    border: 1px solid black;
     height: 10vh;
 }
 
@@ -58,6 +55,3 @@ img{
 input{
     width: 100%;
 }
-/*div{
-    border: 1px solid black;
-}*/
