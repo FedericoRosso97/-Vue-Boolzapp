@@ -2,22 +2,28 @@
 .flex{
     display: flex;
 }
+.messageGreeen{
+    background-color:green;
+}
 
+.messageWhite{
+    background-color: white;
+}
 main{
-   /* height: 100vh;*/
     border: 1px solid black;
 }
 nav{
     background-color: rgb(230, 230, 230);
     border: 1px solid black;
+    height: 10vh;
 }
 
 .myContacts{
     border: 1px solid black;
 }
 .image{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -29,6 +35,8 @@ img{
 .mainText{
     height: 70vh;
     background-color: bisque;
+    background-image: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png);
+
 }
 
 .textFooter{

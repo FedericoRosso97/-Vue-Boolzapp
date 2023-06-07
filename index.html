@@ -15,15 +15,18 @@
         <main class="container">
           <div class="row">
             <div class="col-3 p-0 myContacts">
-                <nav class="d-flex justify-content-between">
+                <nav class="d-flex justify-content-between align-items-center p-4">
                     <div class="d-flex">
                         <div class="image">
                             <img src="img/avatar_2.jpg" alt="img">
                         </div>
+                        <div >
+                            <p class="mb-0">Sofia</p>
+                        </div>
                     </div>
                     <div>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </nav>
@@ -32,10 +35,16 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="search">
                     </div>
-            <div class="mainText"></div>
+                <div class="mainContacts">
+                    <!--contatti-->
+                    <div class="d-flex" v-for="(contact,index) in contacts">
+                        <img :src="contacts[index].avatar" alt="img">
+                        <p>{{contacts[index].name}}</p>
+                    </div>
+                </div>
             </div>
             <div class="col-9  p-0 mytextArea">
-                    <nav class="d-flex justify-content-between">
+                    <nav class="d-flex justify-content-between align-items-center p-4">
                         <div class="d-flex">
                             <div class="image">
                                 <img src="img/avatar_1.jpg" alt="img">
