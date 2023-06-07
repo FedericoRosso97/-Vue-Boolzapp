@@ -38,7 +38,9 @@
                 <div class="mainContacts">
                     <!--contatti-->
                     <div class="d-flex" v-for="(contact,index) in contacts">
-                        <img :src="contacts[index].avatar" alt="img">
+                        <div class="image">
+                            <img :src="contacts[index].avatar" alt="img">
+                        </div>
                         <p>{{contacts[index].name}}</p>
                     </div>
                 </div>
