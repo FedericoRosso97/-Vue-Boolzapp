@@ -3,11 +3,11 @@
     display: flex;
 }
 
-.messageGreeen{
+.sentMessage{
     background-color:green;
 }
 
-.messageWhite{
+.receivedMessage{
     background-color: white;
 }
 

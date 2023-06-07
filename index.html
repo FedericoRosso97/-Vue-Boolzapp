@@ -64,7 +64,9 @@
                     </nav>
                 <div class="mainText">
                     <!--messaggi-->
-                    <p  v-for="(item,index) in contacts[0].messages">{{contacts[0].messages[index].message}}</p>
+                    <div class="" v-for="(item,index) in contacts[0].messages">
+                        <p :class="{sentMessage:contacts[0].messages[index].status=='sent'}">{{contacts[0].messages[index].message}}</p>
+                    </div>
                 </div>
                 <div class="container textFooter ">
                     <div class="row d-flex d-flex  align-items-center textFooter">
