@@ -182,8 +182,9 @@ createApp({
             this.active=indice;
        },
        sendMessage(index){
-             this.contacts.push({
-                          text:this.text,
+        this.contacts[this.active].messages.push({
+                          message:this.text,
+                          status:'sent',
                                  });
              console.log(this.contacts);
              this.text=' ';
