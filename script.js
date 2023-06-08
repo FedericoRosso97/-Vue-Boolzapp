@@ -3,7 +3,7 @@ const {createApp}= Vue;
 createApp({
     data(){
         return{
-            active:2,
+            active:0,
             contacts: [
                 {
                     name: 'Michele',
@@ -80,15 +80,15 @@ createApp({
                     visible: true,
                     messages: [
                         {
-                            date: '10/01/2020 15:30:55',
-                            message: 'Lo sai che ha aperto una nuova pizzeria?',
-                            status: 'sent'
+                            date: '28/03/2020 10:10:40',
+                            message: 'Lo sai che ho aperto una nuova pizzeria?',
+                            status: 'received'
                         },
                         {
-                            date: '10/01/2020 15:50:00',
+                            date: '28/03/2020 10:20:10',
                             message: 'Si, ma preferirei andare al cinema',
-                            status: 'received'
-                        }
+                            status: 'sent'
+                        },
                     ],
                 },
                
@@ -112,7 +112,7 @@ createApp({
                 
                 {
                     name: 'Claudia',
-                    avatar: 'img/avatar_5.jpg',
+                    avatar: 'img/avatar_6.jpg',
                     visible: true,
                     messages: [
                         {
@@ -177,9 +177,9 @@ createApp({
         }
     },
     methods:{
-        activeContact(indice){
+       activeContact(indice){
             this.active=indice;
-        }
+       }
 
     }
 }).mount('#app');
