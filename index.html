@@ -39,7 +39,7 @@
                 </div>
                 <div class="mainContacts">
                     <!--contatti-->
-                    <div class="d-flex p-2" v-for="(contact,index) in contacts">
+                    <div class="d-flex p-2" v-for="(contact,index) in contacts" @click="activeContact(index)">
                         <div class="image">
                             <img :src="contacts[index].avatar" alt="img">
                         </div>
@@ -67,8 +67,8 @@
                 <div class="mainText">
                     <!--messaggi-->
                     <div class="#" v-for="(item,index) in contacts[0].messages">
-                        <p v-if="contacts[0].messages[index].status==='sent'" class="sentMessage" >{{contacts[0].messages[index].message}}</p>
-                        <p v-else class="receivedMessage">{{contacts[0].messages[index].message}}</p>
+                        <p v-if="contacts[0].messages[index].status=='sent'" class="sentMessage" >{{contacts[active].messages[index].message}}</p>
+                        <p v-else class="receivedMessage">{{contacts[active].messages[index].message}}</p>
                     </div>
                 </div>
                 <div class="container textFooter">
