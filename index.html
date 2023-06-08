@@ -12,7 +12,7 @@
 <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <div id="app">
-        <main class="container">
+        <main class="container mt-4">
           <div class="row">
             <div class="col-3 p-0 myContacts">
                 <nav class="d-flex justify-content-between align-items-center p-4">
@@ -30,11 +30,13 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </nav>
-                <div class="alert"></div>
-                    <div class="search d-flex">
+                <div class="alert">
+                
+                </div>
+                <div class="mysearch d-flex align-items-center p-2">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="search">
-                    </div>
+                        <input type="search" class="m-2">
+                </div>
                 <div class="mainContacts">
                     <!--contatti-->
                     <div class="d-flex p-2" v-for="(contact,index) in contacts">
@@ -45,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-9  p-0 mytextArea">
+            <div class="col-9 p-0 mytextArea">
                     <nav class="d-flex justify-content-between align-items-center p-4">
                         <div class="d-flex">
                             <div class="image">
@@ -69,13 +71,15 @@
                         <p v-else class="receivedMessage">{{contacts[0].messages[index].message}}</p>
                     </div>
                 </div>
-                <div class="container textFooter ">
+                <div class="container textFooter">
                     <div class="row d-flex d-flex  align-items-center textFooter">
-                        <div class="col-1">
-                            <i class="fa-regular fa-face-smile"></i>
+                        <div class="col-1 d-flex justify-content-center p-0">
+                            <i class="fa-regular fa-face-smile fa-2x"></i>
                         </div>
-                        <div class="col-10"><input type="text"></div>
-                        <div class="col-1"><i class="fa-solid fa-microphone"></i></div>
+                        <div class="col-10 p-0"><input type="text"></div>
+                        <div class="col-1 d-flex justify-content-center p-0">
+                            <i class="fa-solid fa-microphone fa-2x"></i>
+                        </div>
                     </div>
                 </div>
             </div>
