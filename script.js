@@ -181,11 +181,19 @@ createApp({
        activeContact(indice){
             this.active=indice;
        },
+       sendResponde(){
+        this.contacts[this.active].messages.push({
+            message:'Ok!',
+            status: 'received'
+                   })
+       },
        sendMessage(index){
         this.contacts[this.active].messages.push({
                           message:this.text,
                           status:'sent',
-                                 });
+                                 })
+                           
+        setTimeout(this.sendResponde,1000);
              console.log(this.contacts);
              this.text=' ';
        },
