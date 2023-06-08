@@ -3,6 +3,7 @@ const {createApp}= Vue;
 createApp({
     data(){
         return{
+            text:'ciao!',
             active:0,
             contacts: [
                 {
@@ -171,7 +172,7 @@ createApp({
                             message: 'OK!!',
                             status: 'received'
                         }
-                    ],
+                    ]
                 }
             ]//end contantcs array;
         }
@@ -179,7 +180,14 @@ createApp({
     methods:{
        activeContact(indice){
             this.active=indice;
-       }
+       },
+       sendMessage(index){
+             this.contacts.push({
+                          text:this.text,
+                                 });
+             console.log(this.contacts);
+             this.text=' ';
+       },
 
     }
 }).mount('#app');
