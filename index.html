@@ -35,7 +35,7 @@
                 </div>
                 <div class="mysearch d-flex align-items-center p-2">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="search" class="m-2" v-model="search">
+                        <input type="search" class="m-2" v-model="search" @keyup="filteredContacts()">
                 </div>
                 <div class="mainContacts">
                     <!--contatti-->
