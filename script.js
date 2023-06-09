@@ -3,6 +3,7 @@ const {createApp}= Vue;
 createApp({
     data(){
         return{
+            search:' ',
             text:' ',
             active:0,
             contacts: [
@@ -193,10 +194,20 @@ createApp({
                           status:'sent',
                                  })
                            
-        setTimeout(this.sendResponde,1000);
-             console.log(this.contacts);
-             this.text=' ';
+          setTimeout(this.sendResponde,1000);
+             
+          console.log(this.contacts);
+           this.text=' ';
        },
+       
+       
+       filteredContacts(contatti){
+        console.log(this.search);
+        return this.items.filter(item => {
+            return item.type.toLowerCase().indexOf(this.search.toLowerCase()) > -1
+         });
+    }
+
 
     }
 }).mount('#app');

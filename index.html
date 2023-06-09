@@ -31,15 +31,21 @@
                     </div>
                 </nav>
                 <div class="alert">
-                
+                 <!--qui ci mettiamo alter messaggi-->
                 </div>
                 <div class="mysearch d-flex align-items-center p-2">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="search" class="m-2">
+                        <input type="search" class="m-2" v-model="search">
                 </div>
                 <div class="mainContacts">
                     <!--contatti-->
-                    <div class="d-flex p-2" v-for="(contact,index) in contacts" @click="activeContact(index)">
+                    <div v-if="search==' '" class="d-flex p-2 mycontact" v-for="(contact,index) in contacts" @click="activeContact(index)">
+                        <div class="image">
+                            <img :src="contacts[index].avatar" alt="img">
+                        </div>
+                        <p>{{contacts[index].name}}</p>
+                    </div>
+                    <div v-else class="d-flex p-2 mycontact" v-for="item in filteredContact(contact)" @click="activeContact(index)">
                         <div class="image">
                             <img :src="contacts[index].avatar" alt="img">
                         </div>
