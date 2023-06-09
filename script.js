@@ -205,6 +205,8 @@ createApp({
        filteredContacts(contacts){
         if(this.search !==' ' && this.contacts.name.indexOf(this.search)){
             this.visible=false;
+    }else{
+        this.visible=true;
     }
     }
 }}).mount('#app');

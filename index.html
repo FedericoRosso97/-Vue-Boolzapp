@@ -39,7 +39,7 @@
                 </div>
                 <div class="mainContacts">
                     <!--contatti-->
-                    <div v-if="visible" class="d-flex p-2 mycontact" v-for="(contact,index) in contacts" @click="activeContact(index)">
+                    <div v-if="visible='true'" class="d-flex p-2 mycontact" v-for="(contact,index) in contacts" @click="activeContact(index)">
                         <div class="image">
                             <img :src="contacts[index].avatar" alt="img">
                         </div>
