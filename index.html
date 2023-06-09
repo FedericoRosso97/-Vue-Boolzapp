@@ -45,7 +45,7 @@
                         </div>
                         <p>{{contacts[index].name}}</p>
                     </div>
-                    <div v-else class="d-flex p-2 mycontact" v-for="item in filteredContact(contact)" @click="activeContact(index)">
+                    <div v-else class="d-flex p-2 mycontact" v-for="item in filteredContacts(contact)" @click="activeContact(index)">
                         <div class="image">
                             <img :src="contacts[index].avatar" alt="img">
                         </div>

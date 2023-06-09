@@ -201,10 +201,10 @@ createApp({
        },
        
        
-       filteredContacts(contatti){
+       filteredContacts(contacts){
         console.log(this.search);
-        return this.items.filter(item => {
-            return item.type.toLowerCase().indexOf(this.search.toLowerCase()) > -1
+        return contacts.filter(item => {
+            return this.item.name.indexOf(this.search) > -1
          });
     }
 
