@@ -4,6 +4,7 @@ createApp({
     data(){
         return{
             search:' ',
+            visible:true,
             text:' ',
             active:0,
             contacts: [
@@ -202,12 +203,8 @@ createApp({
        
        
        filteredContacts(contacts){
-        console.log(this.search);
-        return contacts.filter(item => {
-            return this.item.name.indexOf(this.search) > -1
-         });
+        if(this.search !==' ' && this.contacts.name.indexOf(this.search)){
+            this.visible=false;
     }
-
-
     }
-}).mount('#app');
+}}).mount('#app');

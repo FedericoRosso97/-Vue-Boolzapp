@@ -39,18 +39,13 @@
                 </div>
                 <div class="mainContacts">
                     <!--contatti-->
-                    <div v-if="search==' '" class="d-flex p-2 mycontact" v-for="(contact,index) in contacts" @click="activeContact(index)">
+                    <div v-if="visible" class="d-flex p-2 mycontact" v-for="(contact,index) in contacts" @click="activeContact(index)">
                         <div class="image">
                             <img :src="contacts[index].avatar" alt="img">
                         </div>
                         <p>{{contacts[index].name}}</p>
                     </div>
-                    <div v-else class="d-flex p-2 mycontact" v-for="item in filteredContacts(contact)" @click="activeContact(index)">
-                        <div class="image">
-                            <img :src="contacts[index].avatar" alt="img">
-                        </div>
-                        <p>{{contacts[index].name}}</p>
-                    </div>
+    
                 </div>
             </div>
             <div class="col-9 p-0 mytextArea">
